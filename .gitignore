@@ -1,0 +1,10 @@
+# NodeJs artefacts
+app/node_modules
+admin-panel/node_modules
+
+# Local deployments
+app/dist
+admin-panel/dist
+
+# Editor directories and files
+.idea
