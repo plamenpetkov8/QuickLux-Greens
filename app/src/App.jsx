@@ -1,7 +1,6 @@
 import { Suspense } from "react";
 import { CssBaseline } from "@mui/material";
 import { ThemeProvider } from "@emotion/react";
-import { ToastContainer } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
 
@@ -12,6 +11,7 @@ import Ingredients from "./pages/Ingredients";
 import PageNotFound from "./pages/PageNotFound";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { IngredientsProvider } from "./contexts/IngredientsContext";
+import ToastContainer from "./components/ToastContainer";
 
 function App() {
   const theme = useTheme();

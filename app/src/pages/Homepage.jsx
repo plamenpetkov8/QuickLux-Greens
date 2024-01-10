@@ -1,9 +1,21 @@
-import { Link } from "react-router-dom";
+import { Link, useInRouterContext } from "react-router-dom";
 import { Box, Button, Stack, Typography } from "@mui/material";
 
 import AppHeader from "../components/AppHeader";
+import { useIngredients } from "../contexts/IngredientsContext";
+import useToastFactory from "../hooks/useToastFactory";
 
 function Homepage() {
+  const { ingredients } = useIngredients();
+  const errToast = useToastFactory();
+
+  function handleOnClick(e) {
+    if (!ingredients.length) {
+      e.preventDefault();
+      errToast("Our Lab is currently out of service. Come back again later!");
+    }
+  }
+
   return (
     <Box
       display="flex"
@@ -41,6 +53,7 @@ function Homepage() {
         </Typography>
         <Button
           component={Link}
+          onClick={handleOnClick}
           size="large"
           to="/ingredients"
           variant="contained"

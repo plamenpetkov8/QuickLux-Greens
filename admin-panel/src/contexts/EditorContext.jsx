@@ -20,10 +20,11 @@ function reducer(state, action) {
     case "ingredients/loaded":
       return { ...state, ingredients: action.payload };
     case "ingredient/added":
+      const currLastId = state.ingredients[state.ingredients.length - 1];
       const newItem = {
         ...itemSceleton,
         // Always guarantee a unique id in the App's environment
-        id: state.ingredients[state.ingredients.length - 1].id + 1,
+        id: currLastId ? currLastId.id + 1 : 1,
       };
 
       return { ...state, ingredients: [...state.ingredients, newItem] };
