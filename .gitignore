@@ -4,8 +4,8 @@
 /server/node_modules
 
 # Local deployments
-app/dist
-admin-panel/dist
+/app/dist
+/admin-panel/dist
 
 # Editor directories and files
 .idea
