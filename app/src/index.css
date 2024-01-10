@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+#root {
+  flex-grow: 1;
+  display: "flex";
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}

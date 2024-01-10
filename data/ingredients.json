@@ -1,0 +1,8 @@
+[
+  { "id": 1, "name": "Cabbage", "price": 3, "pricePer": "1kg" },
+  { "id": 2, "name": "Carrot", "price": 0.2, "pricePer": "item" },
+  { "id": 3, "name": "Paprika", "price": 0.3, "pricePer": "item" },
+  { "id": 7, "name": "Cucumber", "price": 0.35, "pricePer": "item" },
+  { "id": 8, "name": "Lettuce", "price": 16, "pricePer": "1kg" },
+  { "id": 9, "name": "Tomato", "price": 0.5, "pricePer": "item" }
+]
